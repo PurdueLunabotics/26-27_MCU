@@ -1,4 +1,3 @@
-# PnH-KiCAD-template
+# MCU 26-27
 
-Please update this readme.
-Please make a KiCAD project, then update the PROJECT_NAME at the top of the pcb_image.yaml (inside the .github/workflows folder)
+The repo for the custom MCU to replace the teensy. Based on the RP2350

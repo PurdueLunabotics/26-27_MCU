@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_NAME: USBC-2026
+  PROJECT_NAME: MCU-2627
 
 jobs:
   render-image:
