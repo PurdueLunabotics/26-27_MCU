@@ -1,0 +1,4 @@
+(sym_lib_table
+ (version 7)
+ (lib (name "MCU_Project") (type "KiCad") (uri "${KIPRJMOD}/Symbols/MCU_Project.kicad_sym") (options "") (descr "Project symbols pinned to the schematic; edit library and schematic together"))
+)
