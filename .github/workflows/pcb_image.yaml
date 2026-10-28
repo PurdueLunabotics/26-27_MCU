@@ -109,7 +109,9 @@ jobs:
           retention-days: 30
 
       # 1. Push ONLY the images folder to a hidden, PR-specific asset branch
+      # Fork PR tokens are read-only; their renders and reports remain in artifacts.
       - name: Publish Renders to Asset Branch
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
@@ -121,6 +123,7 @@ jobs:
 
       # 2. Build the comment and embed the URLs from the new branch
       - name: Combine Reports and Images into Markdown
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         run: |
           # Define the URL pointing to the new branch we just created.
           BASE_URL="https://github.com/${{ github.repository }}/blob/pr-${{ github.event.pull_request.number }}-assets"
@@ -166,6 +169,7 @@ jobs:
 
       # 3. Post the comment to the PR thread
       - name: Create or Update PR Comment
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: pcb-reports
