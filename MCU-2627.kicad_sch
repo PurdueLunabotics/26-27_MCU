@@ -5097,24 +5097,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 0 0)
-					(length 7.62)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 0 -5.08 0)
 					(length 7.62)
@@ -5216,6 +5198,26 @@
 						)
 					)
 					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "RT6150B-33GQW_1_1"
+				(pin input line
+					(at 0 0 0)
+					(length 7.62)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6623,6 +6625,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 138.43 87.63)
@@ -6689,6 +6806,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14c4c780-80e1-4d28-8bf9-910da21d39e9")
+	)
+	(junction
+		(at 43.18 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14d6f59d-893a-4776-b43d-9e3427221a1e")
 	)
 	(junction
 		(at 29.21 105.41)
@@ -6781,6 +6904,12 @@
 		(uuid "4aa2ecce-3366-48cb-a94d-e10afc8743dc")
 	)
 	(junction
+		(at 74.93 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5099f615-e8ae-4a69-bb01-5be20c3c0a3a")
+	)
+	(junction
 		(at 219.71 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6857,6 +6986,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9220366c-2867-4076-9093-e3e552906dbc")
+	)
+	(junction
+		(at 91.44 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96b0c28b-ace8-447e-97f5-91613c70c997")
 	)
 	(junction
 		(at 104.14 106.68)
@@ -7648,7 +7783,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 134.62) (xy 88.9 134.62)
+			(xy 105.41 134.62) (xy 91.44 134.62)
 		)
 		(stroke
 			(width 0)
@@ -8575,6 +8710,16 @@
 			(type default)
 		)
 		(uuid "77d31f94-330e-452a-ac5b-3534ffd0840b")
+	)
+	(wire
+		(pts
+			(xy 67.31 132.08) (xy 105.41 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "787056e6-0ad1-4d51-b77f-1b1a1207476b")
 	)
 	(wire
 		(pts
@@ -9608,6 +9753,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 134.62) (xy 88.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcfddb62-c0ac-4ece-b284-145b80886fff")
+	)
+	(wire
+		(pts
 			(xy 85.09 190.5) (xy 85.09 189.23)
 		)
 		(stroke
@@ -9815,16 +9970,6 @@
 			(type default)
 		)
 		(uuid "f0864ded-1a12-46a7-96ad-edb9d3789bdb")
-	)
-	(wire
-		(pts
-			(xy 67.31 132.08) (xy 105.41 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1924cc0-a2c6-4ad5-962f-773e3fb07d5e")
 	)
 	(wire
 		(pts
@@ -10817,6 +10962,84 @@
 		(uuid "fb69f1f0-a427-415a-b26f-4bbb48663537")
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 91.44 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "004427fe-ca4e-4cfa-8efb-3348598cddf8")
+		(property "Reference" "#FLG05"
+			(at 91.44 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 91.44 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 91.44 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a80f5566-33c9-42e1-8839-cdc35d338722")
+		)
+		(instances
+			(project "MCU-2627"
+				(path "/d48ada1f-57f1-40f0-bdfe-1ee42f4b28b2"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 97.79 92.71 0)
 		(unit 1)
@@ -10924,7 +11147,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 38.1 132.842 90)
 			(hide yes)
 			(show_name no)
@@ -11081,7 +11304,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 100.33 164.338 90)
 			(hide yes)
 			(show_name no)
@@ -11160,7 +11383,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 100.33 174.498 90)
 			(hide yes)
 			(show_name no)
@@ -11498,7 +11721,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 88.138 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -11667,7 +11890,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 78.74 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -11748,7 +11971,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 135.89 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -11874,6 +12097,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 82.55 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43d62810-5a57-44c5-9b22-a52f02facfb7")
+		(property "Reference" "#FLG01"
+			(at 82.55 116.205 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 82.55 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 82.55 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b08d3f30-8dae-4482-8161-e1bea45cee91")
+		)
+		(instances
+			(project "MCU-2627"
+				(path "/d48ada1f-57f1-40f0-bdfe-1ee42f4b28b2"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 76.2 144.78 90)
 		(unit 1)
@@ -11904,7 +12205,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 76.2 146.558 90)
 			(hide yes)
 			(show_name no)
@@ -11985,7 +12286,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 91.44 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12252,7 +12553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 66.04 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12333,7 +12634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 72.39 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12489,7 +12790,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 17.78 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -12647,7 +12948,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 97.79 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12728,7 +13029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 90.17 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -13133,7 +13434,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 24.638 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -13182,6 +13483,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 43.18 124.46 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87843976-5e8a-44fd-9698-29f45f42ddbd")
+		(property "Reference" "#FLG02"
+			(at 45.085 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 46.99 124.4599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 43.18 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "895e5530-a3dc-46ad-afb8-5ef50df2bc55")
+		)
+		(instances
+			(project "MCU-2627"
+				(path "/d48ada1f-57f1-40f0-bdfe-1ee42f4b28b2"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 74.93 123.19 0)
 		(unit 1)
@@ -13214,7 +13594,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 74.93 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -13370,7 +13750,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 44.45 151.638 90)
 			(hide yes)
 			(show_name no)
@@ -13685,7 +14065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 85.09 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -13766,7 +14146,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 88.9 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13847,7 +14227,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 52.07 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -13928,7 +14308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 67.31 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -14084,7 +14464,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4110"
 			(at 27.94 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -14202,7 +14582,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 69.088 127 90)
 			(hide yes)
 			(show_name no)
@@ -14283,7 +14663,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 82.55 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -14362,7 +14742,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 27.94 132.842 90)
 			(hide yes)
 			(show_name no)
@@ -14752,7 +15132,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 44.45 154.178 90)
 			(hide yes)
 			(show_name no)
@@ -14910,7 +15290,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 59.69 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14992,7 +15372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 242.57 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -15119,6 +15499,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 74.93 132.08 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be8fc6b0-c193-432f-b657-c9fbc9b0f763")
+		(property "Reference" "#FLG06"
+			(at 74.93 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 75.184 136.144 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 74.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb614858-fac3-45e4-a02f-0022041a56f4")
+		)
+		(instances
+			(project "MCU-2627"
+				(path "/d48ada1f-57f1-40f0-bdfe-1ee42f4b28b2"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x20_Top_Bottom")
 		(at 210.82 132.08 0)
 		(unit 1)
@@ -15150,7 +15607,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_2x20_P2.00mm_Vertical"
 			(at 210.82 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -15707,7 +16164,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Horizontal"
 			(at 101.6 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -16188,7 +16645,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 85.09 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -16344,7 +16801,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 100.33 166.878 90)
 			(hide yes)
 			(show_name no)
@@ -16423,7 +16880,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
 			(at 27.178 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -16504,7 +16961,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 31.75 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -16585,7 +17042,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
 			(at 127 91.44 0)
 			(hide yes)
 			(show_name no)
