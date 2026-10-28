@@ -92,9 +92,11 @@ jobs:
       - name: Debug
         if: always()
         run: |
+          kicad-cli version
           ls -la
           ls images
           ls reports
+          if [ -f reports/erc.rpt ]; then cat reports/erc.rpt; fi
 
       - name: Upload PCB Image Artifact
         if: always()
@@ -102,8 +104,8 @@ jobs:
         with:
           name: pcb-renders
           path: |
-            ${{ github.workspace }}/images
-            ${{ github.workspace }}/reports
+            images/
+            reports/
           retention-days: 30
 
       # 1. Push ONLY the images folder to a hidden, PR-specific asset branch
