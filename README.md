@@ -22,10 +22,3 @@ is a power output, its supply and ground pins are power inputs, and its
 inductor switch terminals are passive. See the
 [RT6150A/B datasheet](https://www.richtek.com/assets/product_file/RT6150A%3DRT6150B/DS6150AB-06.pdf)
 and [USBLC6-2 datasheet](https://www.st.com/resource/en/datasheet/usblc6-2.pdf).
-
-ERC still reports isolated labels on GPIO25 and GPIO29/ADC3. These labels
-currently connect only to MCU pins; decide whether to route them to a
-connector or mark the pins unused before removing the labels. Correcting
-the regulator ground pin types also exposes a missing power driver on GND.
-Declare an external supply return with a PWR_FLAG only after confirming
-the intended ground connection. ERC severities and exclusions are unchanged.
